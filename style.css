@@ -1,0 +1,152 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+  background-color: #e5e5e5;
+}
+
+/* Header styles */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #007aff;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Main content styles */
+main {
+  margin: 100px 20px;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007aff;
+}
+
+main p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #007aff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Form styles */
+form {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form input[type='text'],
+form input[type='email'],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+form input[type='submit'] {
+  background-color: #007aff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form input[type='submit']:hover {
+  background-color: #0063cc;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  main {
+    margin: 100px 10px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav li {
+    margin-right: 0;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+}
